@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -m py_compile "$PYFILE" && echo "Compilation successful. Output file: $(basename -s .py $PYFILE).pyc" || echo "Error: Compilation failed."
+python -m py_compile --output=$PYFILEc  "$PYFILE"
