@@ -4,17 +4,21 @@ number = random.randint(-10000, 10000)
 
 
 def _abs(num):
+    """
+    Function returns the absolute number of a number.
+    Example : number = -365
+              _abs(number) == 365
+    """
     if num < 0:
         return -num
     else:
         return num
 
 
-remainder = (_abs(number) % 10)
-
 if number < 0:
-    remainder = -1 * remainder
-
+    remainder = -1 * (_abs(number) % 10)
+else:
+    remainder = (_abs(number) % 10)
 
 print(f"Last digit of {number} is {remainder}", end=" ")
 if remainder > 5:
