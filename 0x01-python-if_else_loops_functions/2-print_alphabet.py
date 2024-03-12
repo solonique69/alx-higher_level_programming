@@ -2,4 +2,4 @@
 
 for letter in range(97, 123):
     letter = chr(letter)
-    print("{}".format(letter), end=" ")
+    print("{}".format(letter), end="")
