@@ -2,6 +2,6 @@
 
 for num in range(0,100):
     if num <= 9:
-        print(f"0{num}, ", end="")
+        print("0{}".format(num), end=", ")
     else:
-        print(f"{num}, ", end="")
+        print("{}".format(num), end=", ")
